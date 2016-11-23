@@ -1,0 +1,125 @@
+<ion-view class="conformOrder header-input buy">
+  <div class="bar bar-header padding-lr0">
+   <!-- <a id="left-icon" class="button icon ion-ios-arrow-left  button-clear" ui-sref="payOrder"></a>-->
+    <h4 id="header-title">购买</h4>
+  </div>
+  <ion-content overflow-scroll="true" class="has-header" style="background: #f3f3f3" id="scrollBar" ng-click="cancel()">
+    <div class="list white-bg paddingb10">
+      <div class="row"><span class="font-18">刘女士</span><span class="gray-font">您好!</span></div>
+    </div>
+    <div class="end-line"></div>
+    <div>
+      <div class="list white-bg end-line" ui-sref="productDetail">
+        <div class="row">
+          <div class="col paddingb0">
+            <div class="row">
+              <div class=" col-33">
+                <img class="wh100" src="img/demo.png">
+              </div>
+              <div class=" col-67 col-center">
+                <div class="row">
+                  <div class="col desc font-16">面部肌肤美白护理(10次)</div>
+                </div>
+                <div class="row">
+                  <div class="col desc gray-font">对肌肤水光性美白,抗皱性处理,呵护皮肤</div>
+                </div>
+                <div class="row">
+                  <div class="col">
+                    <span class="pric">￥200</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--<div class="row">
+              <div class="col paddingb0 col-center font-18">
+                购买数量
+              </div>
+              <div class="col text-right paddingb0">
+                <div class="col goodsNum text-center">
+                  <input type="button" class="button-clear" ng-click="subBtn(shop)"  value="-">
+                  <input type="number"  class="num" ng-model="shop.hasNum" >
+                  <input type="button"  class="button-clear" ng-click="addBtn(shop)"  value="+">
+                </div>
+              </div>
+            </div>-->
+          </div>
+        </div>
+      </div>
+      <div class="list white-bg orderItem padding-t0">
+        <div class="row paddingtb10">
+          <div class="col text-right paddingb0">
+            <!-- <span class="font-16">共2件商品&nbsp;&nbsp;合计：</span><span class="pric">￥200</span>-->
+            <span class="gray-font" ng-click="delOrderItem();">删除</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div>
+      <div class="list white-bg end-line" ui-sref="productDetail">
+        <div class="row">
+          <div class="col paddingb0">
+            <div class="row">
+              <div class=" col-33">
+                <img class="wh100" src="img/demo.png">
+              </div>
+              <div class=" col-67 col-center">
+                <div class="row">
+                  <div class="col desc font-16">面部肌肤美白护理(10次)</div>
+                </div>
+                <div class="row">
+                  <div class="col desc gray-font">对肌肤水光性美白,抗皱性处理,呵护皮肤</div>
+                </div>
+                <div class="row">
+                  <div class="col">
+                    <span class="pric">￥200</span>
+                  </div>
+                  <div class="col text-right gray-font">
+                    <!--<span><img style="width: 10px;height: 14px;vertical-align: middle;margin-right: -6px;" src="img/cha.png">
+                     <span class="num">123</span>
+                    </span>-->
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--<div class="row">
+              <div class="col paddingb0 col-center font-18">
+                购买数量
+              </div>
+              <div class="col text-right paddingb0">
+                <div class="col goodsNum text-center">
+                  <input type="button" class="button-clear" ng-click="subBtn(shop)"  value="-">
+                  <input type="number"  class="num" ng-model="shop.hasNum" >
+                  <input type="button"  class="button-clear" ng-click="addBtn(shop)"  value="+">
+                </div>
+              </div>
+            </div>-->
+          </div>
+        </div>
+      </div>
+      <div class="list white-bg orderItem padding-t0">
+        <div class="row paddingtb10">
+          <div class="col text-right paddingb0">
+            <!-- <span class="font-16">共2件商品&nbsp;&nbsp;合计：</span><span class="pric">￥200</span>-->
+            <span class="gray-font" ng-click="delOrderItem();">删除</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+   <!-- <div class="padding">
+      <a class="button button-block cyan-btn font-18" ui-sref="payOrder">立即购买</a>
+    </div>-->
+  </ion-content>
+  <div class="bar bar-footer padding-lr0" style="bottom: 48px;">
+    <div class="row text-center col-center">
+      <div class="col text-left col-center paddingl10">
+        <span class="font-16">合计：</span><span class="font-18 red-font">￥566.00</span>
+      </div>
+      <div class="col-33 red-bg white-font font-18" style="line-height: 44px;" ui-sref="payOrder({payOrderRouter: 2})">
+        立即购买
+      </div>
+    </div>
+  </div>
+</ion-view>

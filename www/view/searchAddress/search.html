@@ -1,0 +1,55 @@
+<ion-view class="modal searchModal">
+  <ion-header-bar>
+    <button class="button button-clear" ng-click="hideFun()" style="min-width: 100px;"><i
+      class="icon-left ion-chevron-left"></i>返回
+    </button>
+    </div>
+    <h4 id="header-title">选择地址</h4>
+  <!--  <div class="buttons">
+      <button class="button button-clear" ng-click="hideFun()" style="min-width: 100px;">完成
+      </button>
+    </div>-->
+  </ion-header-bar>
+  <ion-content scroll="false">
+    <div class="row" style="text-align: center;border-bottom: 1px solid #ececec;">
+      <div class="col-33">
+        {{waybillForm.etwDeliverProvince}}
+      </div>
+      <div class="col-33" ng-show="searchIndex>=2">
+        {{waybillForm.etwDeliverCity}}
+      </div>
+      <div class="col-33" ng-show="searchIndex>=3">
+        {{waybillForm.etwDeliverDistrict}}
+      </div>
+    </div>
+    <div class="row list-row" style="text-align: center;">
+      <div class="col-33">
+        <div class="list">
+          <ion-scroll scroll-height>
+            <div class="item" ng-repeat="province in provinces" ng-click="checkItem(province,2)">
+              {{province.text}}
+            </div>
+          </ion-scroll>
+        </div>
+      </div>
+      <div class="col-33">
+        <div class="list" ng-show="searchIndex>=2">
+          <ion-scroll  scroll-height>
+            <div class="item" ng-repeat="city in citys" ng-click="checkItem(city,3)">
+              {{city.text}}
+            </div>
+          </ion-scroll>
+        </div>
+      </div>
+      <div class="col-33">
+        <div class="list" ng-show="searchIndex>=3">
+          <ion-scroll scroll-height>
+            <div class="item" ng-repeat="district in districts" ng-click="checkItem(district,4)">
+              {{district.text}}
+            </div>
+          </ion-scroll>
+        </div>
+      </div>
+    </div>
+  </ion-content>
+</ion-view>

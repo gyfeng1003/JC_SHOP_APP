@@ -1,0 +1,31 @@
+<ion-view class="mine setting">
+   <div class="bar bar-header">
+     <a id="left-icon" class="button icon ion-ios-arrow-left  button-clear" ng-click="go(-1);"></a>
+     <h4 id="header-title">设置</h4>
+   </div>
+  <ion-content overflow-scroll="true" class="has-header gray-bg" id="scrollBar" ng-click="cancel()">
+    <ion-list class="funcItem">
+      <ion-item>
+        <div class="row">
+          <div class="col col-center">联系我们</div>
+          <div class="col col-center text-right"><i class="ion-ios-arrow-right gray-font font-26"></i></div>
+        </div>
+      </ion-item>
+      <ion-item>
+        <div class="row">
+          <div class="col col-center">意见反馈</div>
+          <div class="col col-center text-right"><i class="ion-ios-arrow-right gray-font font-26"></i></div>
+        </div>
+      </ion-item>
+      <ion-item>
+        <div class="row">
+          <div class="col col-center">版本介绍</div>
+          <div class="col col-center text-right"><i class="ion-ios-arrow-right gray-font font-26"></i></div>
+        </div>
+      </ion-item>
+    </ion-list>
+    <div class="padding">
+      <a class="button button-block white-bg" ng-click="exitLogin();">退出登录</a>
+    </div>
+  </ion-content>
+</ion-view>

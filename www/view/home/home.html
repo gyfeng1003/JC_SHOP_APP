@@ -1,0 +1,214 @@
+<ion-view class="mainMenu header-input">
+  <div class="bar bar-header padding-lr0">
+    <!--<div class="col-15 text-center" ng-if="search">
+      <a ng-click="cancel()" class="button button-clear white-font" style="color: #fff">取消</a>
+    </div>-->
+    <div class="col-20 text-center col-center" ng-click="selectCity();">
+      <div class="row">
+        <div class="col col-center">
+          <img style="width: 18px;height:22px;vertical-align: middle; " src="img/inLocation.png">
+          <span class="white-font" style="vertical-align: middle;overflow: hidden">{{provinceCn}}</span>
+        </div>
+       <!-- <div class="col-67 ellipsis" style="color: white;">{{provinceCn}}</div>
+        <div class="col-33"><i class="ion-ios-arrow-down down"></i></div>-->
+      </div>
+    </div>
+    <label class="item-input">
+      <i class="icon ion-ios-search placeholder-icon font-26"></i>
+      <input type="text" ng-model="etwCode" ng-focus="search = true" ng-blur="search = false" class="searchInput white-font" placeholder="搜索产品">
+    </label>
+    <div class="col-15 text-center"  ng-if="search" ng-click="toSearchOrder()">
+      <a class="button button-clear white-font">查询</a>
+    </div>
+    <div class="col-15 text-center"  ng-if="!search" ng-click="scanBarcode();">
+      <img src="img/tab_icon_scan.png" style="height: 32px;padding: 5px;">
+    </div>
+  </div>
+  <ion-content overflow-scroll="true" class="has-header" id="scrollBar" ng-click="cancel()">
+        <ion-slide-box show-pager="true" auto-play="true" does-continue="true" slide-interval="3000">
+          <ion-slide ui-sref="productDetail">
+            <div class="box box1"></div>
+          </ion-slide>
+          <ion-slide ui-sref="productDetail">
+            <div class="box box2"></div>
+          </ion-slide>
+          <ion-slide ui-sref="productDetail">
+            <div class="box box3"></div>
+          </ion-slide>
+          <ion-slide ui-sref="productDetail">
+            <div class="box box4"></div>
+          </ion-slide>
+        </ion-slide-box>
+
+        <div class="list">
+          <div class="row paddingl10">
+            <div class="col title">
+              服务产品&nbsp;SERVICE <span class="coffee-font">PRODUCTS</span>
+            </div>
+           <!-- <div class="col text-right more" ui-sref="serviceProduct">
+              更多>
+            </div>-->
+          </div>
+          <div class="row" ui-sref="serviceProduct">
+            <div class="col" >
+              <div class="box box4"></div>
+            </div>
+            <!--<div class="col col-33" ui-sref="productDetail">
+              <img style="max-height: 100px;max-width: 100%;" src="img/demo.png">
+              <div class="row desc">油性皮肤准主库萨巴克莱森反反复复</div>
+              <div class="row"><div class="col pric">￥200</div><div class="col del-line text-right">$￥568</div></div>
+            </div>
+            <div class="col col-33">
+              <img style="max-height: 100px;max-width: 100%;" src="img/demo.png">
+              <div class="row desc">油性皮肤准主库萨巴克莱森反反复复</div>
+              <div class="row"><div class="col pric">￥200</div><div class="col del-line text-right">$￥568</div></div>
+            </div>
+            <div class="col col-33">
+              <img style="max-height: 100px;max-width: 100%;" src="img/demo.png">
+              <div class="row desc">油性皮肤准主库萨巴克莱森反反复复</div>
+              <div class="row"><div class="col pric">￥200</div><div class="col del-line text-right">$￥568</div></div>
+            </div>-->
+          </div>
+        </div>
+
+        <div class="list">
+          <div class="row gray-bg padding-t0 paddingb10">
+            <div class="col title paddingl10 gray-font" ui-sref="productDetail">
+             护肤区
+            </div>
+           <!-- <div class="col text-right more" ui-sref="dayService">
+              更多>
+            </div>-->
+          </div>
+          <div class="row text-center row-wrap gray-bg padding-t0">
+            <div class="col col-25 paddingtb10 white-bg" ui-sref="dayService">
+              <img style="max-height: 80px;max-width: 100%;" src="img/jinghua.jpg">
+              <div class="row desc gray-font font-12"><div class="col text-center">面部精华</div></div>
+             <!-- <div class="row"><div class="col pric">￥200</div><div class="col del-line text-right">$￥568</div></div>-->
+            </div>
+            <div class="col col-25 paddingtb10 white-bg" ui-sref="dayService">
+              <img style="max-height: 80px;max-width: 100%;" src="img/jinghua.jpg">
+              <div class="row desc gray-font font-12"><div class="col text-center">面部精华</div></div>
+              <!-- <div class="row"><div class="col pric">￥200</div><div class="col del-line text-right">$￥568</div></div>-->
+            </div>
+            <div class="col col-25 paddingtb10 white-bg" ui-sref="dayService">
+              <img style="max-height: 80px;max-width: 100%;" src="img/jinghua.jpg">
+              <div class="row desc gray-font font-12"><div class="col text-center">面部精华</div></div>
+              <!-- <div class="row"><div class="col pric">￥200</div><div class="col del-line text-right">$￥568</div></div>-->
+            </div>
+            <div class="col col-25 paddingtb10 white-bg" ui-sref="dayService">
+              <img style="max-height: 80px;max-width: 100%;" src="img/jinghua.jpg">
+              <div class="row desc gray-font font-12"><div class="col text-center">面部精华</div></div>
+              <!-- <div class="row"><div class="col pric">￥200</div><div class="col del-line text-right">$￥568</div></div>-->
+            </div>
+            <div class="col col-25 paddingtb10 white-bg" ui-sref="dayService">
+              <img style="max-height: 80px;max-width: 100%;" src="img/jinghua.jpg">
+              <div class="row desc gray-font font-12"><div class="col text-center">面部精华</div></div>
+              <!-- <div class="row"><div class="col pric">￥200</div><div class="col del-line text-right">$￥568</div></div>-->
+            </div>
+            <div class="col col-25 paddingtb10 white-bg" ui-sref="dayService">
+              <img style="max-height: 80px;max-width: 100%;" src="img/jinghua.jpg">
+              <div class="row desc gray-font font-12"><div class="col text-center">面部精华</div></div>
+              <!-- <div class="row"><div class="col pric">￥200</div><div class="col del-line text-right">$￥568</div></div>-->
+            </div>
+            <div class="col col-25 paddingtb10 white-bg" ui-sref="dayService">
+              <img style="max-height: 80px;max-width: 100%;" src="img/jinghua.jpg">
+              <div class="row desc gray-font font-12"><div class="col text-center">面部精华</div></div>
+              <!-- <div class="row"><div class="col pric">￥200</div><div class="col del-line text-right">$￥568</div></div>-->
+            </div>
+          </div>
+        </div>
+
+        <div class="list">
+          <div class="row gray-bg padding-t0 paddingb10">
+            <div class="col title paddingl10 gray-font">
+              彩妆区
+            </div>
+            <!-- <div class="col text-right more" ui-sref="dayService">
+               更多>
+             </div>-->
+          </div>
+          <div class="row text-center row-wrap gray-bg" style="padding-top:0">
+            <div class="col col-25 paddingtb10 white-bg" ui-sref="dayService">
+              <img style="max-height: 80px;max-width: 100%;" src="img/jinghua.jpg">
+              <div class="row desc gray-font font-12"><div class="col text-center">面部精华</div></div>
+              <!-- <div class="row"><div class="col pric">￥200</div><div class="col del-line text-right">$￥568</div></div>-->
+            </div>
+            <div class="col col-25 paddingtb10 white-bg" ui-sref="dayService">
+              <img style="max-height: 80px;max-width: 100%;" src="img/jinghua.jpg">
+              <div class="row desc gray-font font-12"><div class="col text-center">面部精华</div></div>
+              <!-- <div class="row"><div class="col pric">￥200</div><div class="col del-line text-right">$￥568</div></div>-->
+            </div>
+            <div class="col col-25 paddingtb10 white-bg" ui-sref="dayService">
+              <img style="max-height: 80px;max-width: 100%;" src="img/jinghua.jpg">
+              <div class="row desc gray-font font-12"><div class="col text-center">面部精华</div></div>
+              <!-- <div class="row"><div class="col pric">￥200</div><div class="col del-line text-right">$￥568</div></div>-->
+            </div>
+            <div class="col col-25 paddingtb10 white-bg" ui-sref="dayService">
+              <img style="max-height: 80px;max-width: 100%;" src="img/jinghua.jpg">
+              <div class="row desc gray-font font-12"><div class="col text-center">面部精华</div></div>
+              <!-- <div class="row"><div class="col pric">￥200</div><div class="col del-line text-right">$￥568</div></div>-->
+            </div>
+            <div class="col col-25 paddingtb10 white-bg" ui-sref="dayService">
+              <img style="max-height: 80px;max-width: 100%;" src="img/jinghua.jpg">
+              <div class="row desc gray-font font-12"><div class="col text-center">面部精华</div></div>
+              <!-- <div class="row"><div class="col pric">￥200</div><div class="col del-line text-right">$￥568</div></div>-->
+            </div>
+            <div class="col col-25 paddingtb10 white-bg" ui-sref="dayService">
+              <img style="max-height: 80px;max-width: 100%;" src="img/jinghua.jpg">
+              <div class="row desc gray-font font-12"><div class="col text-center">面部精华</div></div>
+              <!-- <div class="row"><div class="col pric">￥200</div><div class="col del-line text-right">$￥568</div></div>-->
+            </div>
+          </div>
+        </div>
+
+        <div class="list" style="margin-bottom: 10px;">
+          <div class="row gray-bg padding-t0 paddingb10">
+            <div class="col title paddingl10 gray-font">
+              护理区
+            </div>
+            <!-- <div class="col text-right more" ui-sref="dayService">
+               更多>
+             </div>-->
+          </div>
+          <div class="row text-center row-wrap gray-bg" style="padding-top:0">
+            <div class="col col-25 paddingtb10 white-bg" ui-sref="dayService">
+              <img style="max-height: 80px;max-width: 100%;" src="img/jinghua.jpg">
+              <div class="row desc gray-font font-12"><div class="col text-center">面部精华</div></div>
+              <!-- <div class="row"><div class="col pric">￥200</div><div class="col del-line text-right">$￥568</div></div>-->
+            </div>
+            <div class="col col-25 paddingtb10 white-bg" ui-sref="dayService">
+              <img style="max-height: 80px;max-width: 100%;" src="img/jinghua.jpg">
+              <div class="row desc gray-font font-12"><div class="col text-center">面部精华</div></div>
+              <!-- <div class="row"><div class="col pric">￥200</div><div class="col del-line text-right">$￥568</div></div>-->
+            </div>
+            <div class="col col-25 paddingtb10 white-bg" ui-sref="dayService">
+              <img style="max-height: 80px;max-width: 100%;" src="img/jinghua.jpg">
+              <div class="row desc gray-font font-12"><div class="col text-center">面部精华</div></div>
+              <!-- <div class="row"><div class="col pric">￥200</div><div class="col del-line text-right">$￥568</div></div>-->
+            </div>
+            <div class="col col-25 paddingtb10 white-bg" ui-sref="dayService">
+              <img style="max-height: 80px;max-width: 100%;" src="img/jinghua.jpg">
+              <div class="row desc gray-font font-12"><div class="col text-center">面部精华</div></div>
+              <!-- <div class="row"><div class="col pric">￥200</div><div class="col del-line text-right">$￥568</div></div>-->
+            </div>
+            <div class="col col-25 paddingtb10 white-bg" ui-sref="dayService">
+              <img style="max-height: 80px;max-width: 100%;" src="img/jinghua.jpg">
+              <div class="row desc gray-font font-12"><div class="col text-center">面部精华</div></div>
+              <!-- <div class="row"><div class="col pric">￥200</div><div class="col del-line text-right">$￥568</div></div>-->
+            </div>
+            <div class="col col-25 paddingtb10 white-bg" ui-sref="dayService">
+              <img style="max-height: 80px;max-width: 100%;" src="img/jinghua.jpg">
+              <div class="row desc gray-font font-12"><div class="col text-center">面部精华</div></div>
+              <!-- <div class="row"><div class="col pric">￥200</div><div class="col del-line text-right">$￥568</div></div>-->
+            </div>
+            <div class="col col-25 paddingtb10 white-bg" ui-sref="dayService">
+              <img style="max-height: 80px;max-width: 100%;" src="img/jinghua.jpg">
+              <div class="row desc gray-font font-12"><div class="col text-center">面部精华</div></div>
+              <!-- <div class="row"><div class="col pric">￥200</div><div class="col del-line text-right">$￥568</div></div>-->
+            </div>
+          </div>
+        </div>
+    </div>
+  </ion-content>
+</ion-view>

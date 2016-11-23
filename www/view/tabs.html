@@ -1,0 +1,29 @@
+<ion-nav-view></ion-nav-view>
+<div class="bar bar-footer tabs-color-active-positive" style="padding:0;">
+    <div class="tabs tabs-light tabs-icon-top text-content">
+        <a ui-sref="index" class="tab-item" style="border-left:none;">
+            <img ng-src="img/home{{menu=='home'?'_selected':''}}.png"><br/>
+            首页
+        </a>
+        <a ng-click="buy();" class="tab-item" ng-class="{'primary':menu=='shopCar'}">
+            <img ng-src="img/shopCart{{menu=='shopCar'?'_selected':''}}.png"><br/>
+            购买
+        </a>
+        <a ng-click="subscribe();" class="tab-item" ng-class="{'primary':menu=='subscribe'}">
+          <img ng-src="img/order{{menu=='subscribe'?'_selected':''}}.png"><br/>
+            预约
+        </a>
+        <a  ui-sref="tab.mine" class="tab-item" ng-class="{'primary':menu=='mine'}">
+            <img ng-src="img/mine{{menu=='mine'?'_selected':''}}.png"><br/>
+            我的
+        </a>
+    </div>
+</div>
+<style type="text/css">
+    .tabs a img{
+        margin-top:4px;width:24px;height:24px;
+    }
+    .tab-item{
+        color:rgb(97,97,97);
+    }
+</style>

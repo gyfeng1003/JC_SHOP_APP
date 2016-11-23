@@ -1,0 +1,782 @@
+.imgClass{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 1004;
+  display: block;
+  -webkit-transform: translate(-50%,-50%);
+  -moz-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  -o-transform:  translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+  height: 100%;
+  width: 100%;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+}
+.panoInfoBox .panoInfoBoxTitleBg{
+  height: 0!important;
+  background-color: #fff!important;
+}
+
+.panoInfoBox{
+  height: 0!important;
+}
+.BMap_pop img {
+  width: 0px!important;
+  height: 0px!important;
+  display: none;
+}
+.item-complex .item-content{
+  padding: 10px 49px 10px 10px;
+}
+table,tr,th,td{
+  border: 1px solid #666;
+}
+.BMap_pop img{
+  width: 10px!important;
+  height: 10px!important;
+}
+.panoInfoBox .panoInfoBoxTitleContent{
+  display: none;
+}
+#trans_nav{
+  font-size: 18px!important;
+}
+tbody tr td{
+  text-align: center;
+}
+a{
+  display: inline-block;
+}
+.paddingl10{
+  padding-left: 10px!important;
+}
+.feeStandard{
+  border-collapse: collapse;width: 100%;
+}
+.white-font{
+  color: #fff!important;
+}
+.relepos{
+  position: relative;
+}
+.loadingMask{
+  position: absolute;
+  top:44px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #aaa;
+}
+
+.modal.searchModal .list-row {
+  margin-top: 0px;
+  padding: 0px;
+}
+
+.modal.searchModal .list-row .item {
+  margin: 0px;
+  padding: 5px;
+}
+
+#head {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+ul,li{
+  display: inline-block;
+}
+.star,
+.location{
+  max-width: 16px;
+  max-height: 16px;
+}
+#header-title {
+  color: white;
+  font-size: 18px;
+  line-height: 18px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  -ms-transform: translateX(-50%);/* IE 9 */
+  -moz-transform: translateX(-50%);	/* Firefox */
+  -webkit-transform: translateX(-50%); /* Safari 和 Chrome */
+  -o-transform: translateX(-50%); 	/* Opera */
+  font-family: "黑体";
+}
+
+#left-icon:before{
+  font-size: 30px;
+  line-height: 32px;
+  color: white;
+}
+
+#scrollBar{
+  overflow-x: hidden;
+  overflow-y:visible;
+}
+
+.text-label{
+  padding-top: 8px;
+}
+
+#p0 {
+  padding: 0;
+}
+.in-block{
+  display: inline-block;
+}
+.w40pect{
+  width: 40%;
+  padding: 4px;
+}
+.font-18{
+  font-size: 18px!important;
+}
+.intro{
+  width: 100%;
+  max-height: 170px;
+  padding: 0 10px;
+  background: #fff;
+}
+.w60pect{
+  width: 60%;
+  padding: 4px;
+}
+.end-line-l10{
+  margin-left: 10px;
+  border-bottom: 1px solid #eee;
+}
+#bgwhite{
+  background: #ffffff;
+}
+.wh60{
+  width: 60px;
+  height: 60px;
+}
+.paddingl50{
+  padding-left: 50px;
+}
+/*
+登录
+*/
+#login-body {
+  background: url("../img/bg.jpg") no-repeat;
+}
+.login .version{
+ color: white;
+}
+
+/*
+表单校验样式
+*/
+.showcase-form textarea .ng-dirty.ng-invalid,
+.showcase-form select .ng-dirty.ng-invalid,
+.showcase-form input.ng-dirty.ng-invalid {
+  border-color: #e9322d;
+  -webkit-box-shadow: 0 0 6px #f8b9b7;
+  -moz-box-shadow: 0 0 6px #f8b9b7;
+  box-shadow: 0 0 6px #f8b9b7;
+}
+
+.marginTop44 {
+  margin: 44px 0px 10px 0px !important;
+}
+
+.iconPos{
+  padding: 0px;
+  /* padding-right: 1%; */
+  /* width: 50%; */
+  text-align: right
+}
+/*
+网点查询样式
+*/
+.networkAddress .bar .title {
+  color: white;
+}
+
+.networkAddress .bar .button {
+  font-size: 20px;
+  color: white;
+  background: #3c2b1c;
+}
+
+.networkAddress .searchList input {
+  width: 100%;
+}
+
+.networkAddress .card {
+  margin: 0px;
+}
+
+.networkAddress .card .name {
+  font-size: 16px;
+  font-family: "微软雅黑";
+}
+
+.networkAddress .card .location {
+  color: darkorange;
+}
+
+.networkAddress .card div i {
+  margin-right: 10px;
+}
+
+.networkAddress .card .item-divider {
+  border-top: 1px solid #000;
+  padding: 0px 0px 5px 0px;
+}
+.networkAddress .shopIcon{
+  width: 40px;
+  height: 40px;
+}
+/*
+  个人设置
+ */
+.personalDetails .bar .title {
+  background-color: darkorange;
+  color: white;
+}
+
+.personalDetails .bar .button {
+  font-size: 20px;
+  color: white;
+}
+.personalDetails .exitBtn{
+  border-radius: 0;
+  background: #fff;
+  color: #333;
+  font-family: "黑体";
+  border: none;
+}
+.personalDetails .mine{
+  max-width:25px;
+  max-height: 25px;
+  vertical-align: middle;
+}
+.personalDetails .has-header{
+  background: #eee;
+}
+.personalDetails .head-portrait {
+  position: relative;
+  min-height: 170px;
+  background: url("../img/mine_bei.png");
+  background-size: 100% 100%;
+  z-index: 10;
+  padding: 0;
+}
+.personalDetails .bar{
+  background-size: 100% 0;
+}
+.personalDetails .card{
+  box-shadow: 0 0px 0px rgba(0, 0, 0, 0.3);
+}
+.personalDetails .head-portrait .item {
+  max-width: 80px;
+  min-height: 80px;
+  border-radius: 100px
+}
+
+.personalDetails .head-portrait .item-image{
+  position: absolute;
+  top: 42%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+.personalDetails .loginu{
+  margin-top: 50px;
+  margin-right: 10px;
+}
+.personalDetails .card {
+  margin: 0px;
+}
+
+.personalDetails .list .item {
+  padding: 10px;
+}
+
+.personalDetails .list .item .ion-person-stalker, .ion-edit {
+  margin-right: 5px;
+}
+
+.personalDetails .list .item div {
+  font-size: 16px;
+  font-family: "华文细黑";
+}
+
+.personalDetails .list .item div.describe {
+  font-size: 15px;
+  font-family: "华文细黑";
+  color: #9e9e9e;
+}
+
+/*
+*地址薄样式
+*/
+.contacts .bar .title {
+  color: white;
+}
+
+.contacts .bar .button,.contact .bar .button {
+  font-size: 20px;
+  color: white;
+  line-height: 40px;
+}
+
+.contact .bar-footer{
+  border-top-width:0!important;
+}
+.contact .bar{
+  background-size: 100% 0;
+}
+
+.contacts .card {
+  margin: 10px 5px 0px 5px;
+}
+
+.contacts .list {
+ /* margin-left: 10px;*/
+  margin-bottom: 0;
+  padding: 0;
+  border-bottom: 1px solid #eee;
+}
+
+.contacts .name{
+  font-size: 17px;
+  font-family: "黑体";
+}
+
+.contacts .defanut{
+  position: absolute;
+  right: 10px;
+  top: 16px;
+  background: #a3c324;
+  padding: 2px 10px;
+  border-radius: 15px;
+  font-size: 12px;
+  color: #fff;
+}
+.contacts .edit{
+  background: #a3c324;
+  padding: 0 10px;
+  border-radius: 15px;
+  font-size: 12px;
+  color: #fff;
+}
+.contacts  .bar-footer,.contact .bar-footer{
+  padding: 0;
+}
+.contacts .row + .row {
+  margin-top: 0px;
+}
+.contacts .button-block, .contact .button-block{
+  padding: 0;
+  margin: 0;
+}
+.contacts .item-button button {
+  width: 100%;
+}
+
+.contact .toggle input:checked + .track {
+  border-color: #e19927;
+  background-color: #e19927;
+}
+
+/*
+*修改密码样式
+*/
+.changePassword .bar .title {
+  color: white;
+}
+
+.changePassword .bar .title {
+  color: white;
+}
+
+.changePassword .bar .button {
+  font-size: 20px;
+  color: white;
+}
+
+.changePassword .card {
+  margin: 10px 5px 0px 5px;
+}
+
+.changePassword .list {
+  margin: 0;
+  border: none;
+  padding: 0;
+}
+.changePassword .item-input {
+  margin: 0;
+  padding-left: 10px;
+  border: none;
+  border-bottom: 1px solid #eee;
+}
+.changePassword .input-label{
+  width: 25%;
+}
+.changePassword .padding{
+  padding: 30px 10px;
+}
+.changePassword .item-button button {
+  width: 100%;
+}
+
+.paddingtb10{
+  padding: 10px 0!important;
+}
+
+.mainMenu .bar, .bar-header {
+  background-color: #242733;
+}
+.mainMenu .box{
+  min-height: 150px;
+}
+.mainMenu .box1{
+  background:url("../img/banner.png");
+  background-size: 100% 150px;
+}
+.mainMenu .box2{
+  background:url("../img/banner.png");
+  background-size: 100% 150px;
+}
+.mainMenu .box3{
+  background:url("../img/banner.png");
+  background-size: 100% 150px;
+}
+.mainMenu .box4{
+  background:url("../img/banner.png");
+  background-size: 100% 150px;
+}
+.mainMenu div img {
+  max-width: 100%;
+}
+
+.mainMenu .first {
+  border-right: 1px solid #EFF1F2;
+}
+
+.mainMenu .second {
+  border-right: 1px solid #EFF1F2;
+}
+
+.mainMenu .words {
+  color: #766454;
+  font-size: 15px;
+  font-family: Cambria;
+  margin-bottom: 10px;
+}
+
+@charset "UTF-8";
+ion-tabs.tabs-color-active-positive .tab-item.activated,
+ion-tabs.tabs-color-active-positive .tab-item.active,
+ion-tabs.tabs-color-active-positive .tab-item.tab-item-active {
+  color: #e19927 !important;
+}
+
+.tabs-icon-top > .tabs .tab-item,
+.tabs-icon-top.tabs .tab-item,
+.tabs-icon-bottom > .tabs .tab-item,
+.tabs-icon-bottom.tabs .tab-item {
+  font-size: 14px;
+  line-height: 14px;
+}
+
+.tab-item .icon {
+  height: 28px;
+  font-size: 25px;
+}
+
+.none-border {
+  border: none!important;
+}
+
+.border-bottom {
+  border-bottom: 1px solid #F3F3F3 !important;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/zhonghua\/Desktop\/ZHWL1\/ZHWL_APP\/scss\/style\.scss}line{font-family:\0000332}}
+.gray-font {
+  color: #999 !important;
+}
+.rgb-gray{
+  color:rgb(102, 102, 102);
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/zhonghua\/Desktop\/ZHWL1\/ZHWL_APP\/scss\/style\.scss}line{font-family:\0000339}}
+.font-16 {
+  font-size: 16px !important;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/zhonghua\/Desktop\/ZHWL1\/ZHWL_APP\/scss\/style\.scss}line{font-family:\0000342}}
+.font-14 {
+  font-size: 14px !important;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/zhonghua\/Desktop\/ZHWL1\/ZHWL_APP\/scss\/style\.scss}line{font-family:\0000345}}
+.font-12 {
+  font-size: 12px !important;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/zhonghua\/Desktop\/ZHWL1\/ZHWL_APP\/scss\/style\.scss}line{font-family:\0000348}}
+.font-13 {
+  font-size: 13px !important;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/zhonghua\/Desktop\/ZHWL1\/ZHWL_APP\/scss\/style\.scss}line{font-family:\0000351}}
+.font-red {
+  color: #ff3b30;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/zhonghua\/Desktop\/ZHWL1\/ZHWL_APP\/scss\/style\.scss}line{font-family:\0000354}}
+.wh70 {
+  width: 70%;
+  height: 70%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/zhonghua\/Desktop\/ZHWL1\/ZHWL_APP\/scss\/style\.scss}line{font-family:\0000358}}
+.row, .col {
+   padding: 0;
+ }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/zhonghua\/Desktop\/ZHWL1\/ZHWL_APP\/scss\/style\.scss}line{font-family:\0000361}}
+.width40 {
+  width: 40% !important;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/zhonghua\/Desktop\/ZHWL1\/ZHWL_APP\/scss\/style\.scss}line{font-family:\0000364}}
+.padding-r10 {
+  padding-right: 10px !important;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/zhonghua\/Desktop\/ZHWL1\/ZHWL_APP\/scss\/style\.scss}line{font-family:\0000367}}
+.padding-r20 {
+  padding-right: 20px !important;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/zhonghua\/Desktop\/ZHWL1\/ZHWL_APP\/scss\/style\.scss}line{font-family:\0000370}}
+.paddingb5 {
+  padding-bottom: 5px !important;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/zhonghua\/Desktop\/ZHWL1\/ZHWL_APP\/scss\/style\.scss}line{font-family:\0000373}}
+.margin-t0 {
+  margin-top: 0 !important;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/zhonghua\/Desktop\/ZHWL1\/ZHWL_APP\/scss\/style\.scss}line{font-family:\0000376}}
+.marginb10 {
+  margin-bottom: 10px !important;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/zhonghua\/Desktop\/ZHWL1\/ZHWL_APP\/scss\/style\.scss}line{font-family:\0000379}}
+.paddingt10 {
+  padding-top: 10px !important;
+}
+
+.paddingb0 {
+  padding-bottom: 0 !important;
+}
+
+.white-bg {
+  background: #fff;
+}
+
+.orange-bg.activated {
+  background: #d18c1d;
+}
+
+.button-outline.button-outline.activated {
+  background: #eee;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/zhonghua\/Desktop\/ZHWL1\/ZHWL_APP\/scss\/style\.scss}line{font-family:\00003101}}
+.col-15 {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 15%;
+  -moz-box-flex: 0;
+  -moz-flex: 0 0 15%;
+  -ms-flex: 0 0 15%;
+  flex: 0 0 15%;
+  max-width: 15%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/zhonghua\/Desktop\/ZHWL1\/ZHWL_APP\/scss\/style\.scss}line{font-family:\00003120}}
+/*.button-clear {
+  color: #333 !important;
+}*/
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/zhonghua\/Desktop\/ZHWL1\/ZHWL_APP\/scss\/style\.scss}line{font-family:\00003123}}
+#right-icon {
+  position: absolute;
+  right: 0;
+}
+
+.padding-lr0 {
+  padding-left: 0!important;
+  padding-right: 0!important;
+}
+
+.padding-t0 {
+  padding-top: 0!important;
+}
+
+.paddingtb5 {
+  padding-top: 5px !important;
+  padding-bottom: 5px !important;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/zhonghua\/Desktop\/ZHWL1\/ZHWL_APP\/scss\/style\.scss}line{font-family:\00003139}}
+.personalDetails .head-portrait .loginUser {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+}
+.personalDetails .head-portrait .notlogin {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+}
+
+.personalDetails .head-portrait .loginUser .button{
+  min-height: 30px;
+  line-height: 30px;
+}
+#login .has-header, #register .has-header {
+  background: #f3f3f3;
+}
+#login .input-label, #register .input-label {
+  width: 10%;
+}
+#login .list p, #register .list p {
+  text-align: right;
+  padding-right: 30px;
+}
+#login .validcode, #register .validcode {
+  padding: 13px 10px 12px 12px;
+  color: #999;
+  background: #dddcd8;
+}
+
+.mainMenu a {
+  display: inline-block;
+  vertical-align: middle;
+  text-decoration: none;
+  color: #766454;
+}
+
+.mainMenu .row + .row {
+  margin-top: 0;
+}
+.mainMenu .headImg{
+  max-height: 150px;
+}
+
+.intro .slider {
+  height: 100%; }
+.intro .slider-slide {
+  padding-top: 80px;
+  color: #000;
+  background-color: #fff;
+  text-align: center;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-weight: 300; }
+.intro #logo {
+  margin: 30px 0px; }
+.intro #list {
+  width: 170px;
+  margin: 30px auto;
+  font-size: 20px; }
+.intro #list ol {
+  margin-top: 30px; }
+.intro #list ol li {
+  text-align: left;
+  list-style: decimal;
+  margin: 10px 0px; }
+.intro .button.ng-hide {
+  display: none; }
+.orderSuccess .content{
+  background: #fafafa;
+}
+.orderSuccess .succicon{
+  width: 16%;
+  height: 80%;
+}
+.orderSuccess .list{
+  margin-top: 70px;
+}
+.orderSuccess .row{
+  padding-top: 12px;
+  font-size: 16px;
+  color: #9d9d9d;
+}
+.orderSuccess .button{
+  min-height: 36px;
+  line-height: 36px;
+  padding: 0px 10%;
+  width: 48%;
+}
+.orderSuccess #right-icon{
+  right: 10px;
+  top: 12px;
+}
+.orderDetail .content{
+  background: #fafafa;
+}
+.orderDetail .shipper{
+  padding: 10px!important;
+  padding-bottom: 0!important;
+  border: none;
+  border-bottom: 1px solid #D9D9D9;
+}
+.orderDetail .item-input{
+  padding: 0!important;
+}
+.orderDetail .margin0{
+  margin: 0!important;
+}
+.orderDetail .input-label{
+  margin-left: 10px;
+}
+.orderDetail .text-right{
+  width: 65%;
+}
+.personInfo .input-label{
+  width: 25%;
+}
+.personInfo .item-checkbox{
+  border: none;
+}
+.personInfo .item-button-right > .button{
+  left: 25%!important;
+  width: 100%!important;
+}
+.personInfo .checkbox input, .checkbox-icon{
+  width: 24px;
+  height: 24px;
+}
+.personInfo .sel .item{
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.addrFu  .item .item-content.activated.item-complex > .item-content {
+    border-color: #fff;
+    background-color: #fff; }
+.addrFu .item-complex .item-content{
+    padding-right: 10px;}

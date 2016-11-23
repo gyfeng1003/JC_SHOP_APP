@@ -1,0 +1,139 @@
+<ion-view class="productDetail shopDetail">
+  <div class="bar bar-header ">
+    <a id="left-icon" class="button icon ion-ios-arrow-left  button-clear"  ng-click="go(-1);"></a>
+    <h4 id="header-title">店家详情</h4>
+  </div>
+  <ion-content overflow-scroll="true" class="has-header has-footer" id="scrollBar" ng-click="cancel()">
+    <ion-slide-box show-pager="true" auto-play="true" does-continue="true" slide-interval="3000">
+      <ion-slide ng-repeat="imgUrl in imgUrls track by $index">
+        <div class="box">
+          <img ng-src={{imgUrl}}>
+        </div>
+      </ion-slide>
+    </ion-slide-box>
+    <div class="list intro">
+      <div class="row">
+        <div class="col desc font-16">美轩养生科大会所</div>
+      </div>
+      <div class="row">
+        <div class="col-46">
+          <ul>
+            <li><img class="star" src="img/coffeeStar.png"></li>
+            <li><img class="star" src="img/coffeeStar.png"></li>
+            <li><img class="star" src="img/coffeeStar.png"></li>
+            <li><img class="star" src="img/coffeeStar.png"></li>
+            <li><img class="star" src="img/coffeeStar.png"></li>
+          </ul>
+          <span class="coffee-font font-16">3.5分</span>
+        </div>
+        <div class="col text-right gray-font" ui-sref="evaluate">
+          <span class="gray-font font-16">138人评价&nbsp;<i class="ion-chevron-right"></i></span>
+        </div>
+      </div>
+      <div class="end-line paddingt10"></div>
+      <div class="row">
+        <div class="col col-center text-center">
+          <img class="location" src="img/geo.png">
+        </div>
+        <div class="col-75 desc paddingl10 padding-r10 font-14 gray-font col-center">
+          北京市东城区某某大厦23号北京市东城区某某大厦23号
+        </div>
+        <div class="col-25 text-center" style="border-left: 1px solid #eee" ng-click="homeService.call('1233444556')"><img src="img/phone1.png"></div>
+      </div>
+    </div>
+
+    <div class="list intro">
+      <div class="row" ng-click="selectProfesser()">
+        <div class="col" ><span class="font-16">美容师</span><span class="gray-font">（选择自己喜欢的美容师）</span></div>
+        <div class="col-10 text-right gray-font">
+          <span class="gray-font font-16"><i class="ion-chevron-right"></i></span>
+        </div>
+      </div>
+      <!--<div class="row">
+        <div style="overflow-x: scroll;white-space: nowrap">
+          <ul>
+            <li><img class="portrait" src="img/demo.png"><div>贝贝</div></li>
+            <li><img class="portrait" src="img/demo.png"><div>贝贝</div></li>
+            <li><img class="portrait" src="img/demo.png"><div>贝贝</div></li>
+            <li><img class="portrait" src="img/demo.png"><div>贝贝</div></li>
+            <li><img class="portrait" src="img/demo.png"><div>贝贝</div></li>
+            <li><img class="portrait" src="img/demo.png"><div>贝贝</div></li>
+            <li><img class="portrait" src="img/demo.png"><div>贝贝</div></li>
+            <li><img class="portrait" src="img/demo.png"><div>贝贝</div></li>
+          </ul>
+        </div>
+      </div>-->
+    </div>
+
+    <div class="list intro1 marginb10">
+      <div class="row padding-lr0">
+        <div class="col" ><span class="font-16">可约时间</span><!--<span class="gray-font">（滑动滑块选择时间）</span>--></div>
+      </div>
+      <div class="row padding-t0 padding-lr0">
+        <div class="col-40">
+          <div class="row">
+            <div class="col col-center">
+              <span class="font-12 coffee-font" style="vertical-align: middle;">12月22日&nbsp;今天&nbsp;</span>
+              <div ng-click="toggleDate()" class="in-block" ng-class="{'choosed': date, 'unChoose': !date}"></div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col col-center">
+              <span class="font-12" style="vertical-align: middle;">12月23日&nbsp;明天&nbsp;</span>
+              <div ng-click="toggleDate()" class="in-block choosed"></div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col col-center">
+              <span class="font-12" style="vertical-align: middle;">12月22日&nbsp;后天&nbsp;</span>
+              <div ng-click="toggleDate()" class="in-block choosed"></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-60" ng-show="showTime">
+          <div class="row">
+            <div class="col">
+              <span class="font-12">08:00 - 10:00</span>&nbsp;
+              <div ng-click="toggleTime()" class="in-block" ng-class="{'choosed': time, 'unChoose': !time}"></div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <span class="font-12">10:00 - 12:00</span>&nbsp;
+              <div ng-click="toggleTime()" class="in-block" ng-class="{'choosed': time, 'unChoose': !time}"></div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <span class="font-12">12:00 - 14:00</span>&nbsp;
+              <div ng-click="toggleTime()" class="in-block" ng-class="{'choosed': time, 'unChoose': !time}"></div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <span class="font-12">14:00 - 16:00</span>&nbsp;
+              <div ng-click="toggleTime()" class="in-block" ng-class="{'choosed': time, 'unChoose': !time}"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+   <!-- <div class="padding10" style="background: #f3f3f3">
+      <a class="button button-block cyan-btn font-18" ui-sref="finishSubscribe">确定</a>
+    </div>-->
+  </ion-content>
+  <div class="bar bar-footer padding-lr0">
+    <div class="row text-center col-center">
+      <div class="col-33 col-center">
+        <span class="font-18">12月22日</span><span class="font-12">今天</span>
+      </div>
+      <div class="col col-center">
+        <span class="font-18">18:00</span><span class="font-12">美容师：贝贝</span>
+      </div>
+      <div class="col-25 red-bg white-font font-18" style="line-height: 44px;" ui-sref="subscribeDetail">
+        确定
+      </div>
+    </div>
+  </div>
+</ion-view>

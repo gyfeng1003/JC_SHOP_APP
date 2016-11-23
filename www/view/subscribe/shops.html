@@ -1,0 +1,85 @@
+<ion-view class="header-input shops">
+  <div class="bar bar-header">
+    <a id="left-icon" class="button icon ion-ios-arrow-left button-clear"  ng-click="go(-1);"></a>
+    <h4 id="header-title">选择门店</h4>
+  </div>
+  <ion-content overflow-scroll="true" class="has-header" id="scrollBar">
+      <div class="button-bar">
+        <button class="button text-center btn gray-font" style="border-right: 1px solid #eee" ng-click="selectCity()">
+          {{provinceCn}}
+          <span class="ion-arrow-down-b gray-font font-12"></span>
+        </button>
+        <button class="button text-center btn gray-font" ng-click="toggleSort();">
+          好评
+        <!--  <i class="ion-arrow-down-b gray-font"></i>-->
+          <span ng-class="{'ascIcon': ascSort,'ion-arrow-down-b': !ascSort,'gray-font': !ascSort,'font-12':!ascSort}"></span>
+        </button>
+      </div>
+      <div class="list" ui-sref="shopDetail({orderRoute:3})">
+        <div class="row">
+            <div class="col-33">
+              <img src="img/demo.png" class="wh100">
+            </div>
+            <div class="col col-center">
+              <div class="row">
+                <div class="col">
+                  美宣养荣可大可会所
+                </div>
+              </div>
+              <div class="row">
+                <div class="col">
+                  <ul>
+                    <li><img class="star" src="img/coffeeStar.png"></li>
+                    <li><img class="star" src="img/coffeeStar.png"></li>
+                    <li><img class="star" src="img/coffeeStar.png"></li>
+                    <li><img class="star" src="img/coffeeStar.png"></li>
+                    <li><img class="star" src="img/coffeeStar.png"></li>
+                  </ul>
+                  <span class="coffee-font font-16">3.5分</span>
+                </div>
+              </div>
+              <div class="row gray-font font-16">
+                <div class="col">
+                  <img class="location" style="vertical-align: middle;max-height: 16px;" src="img/geo.png">
+                  <span style="vertical-align: middle;" class="font-14">海淀区苏州街108号，紫金花园11栋3单元</span>
+                </div>
+              </div>
+            </div>
+        </div>
+      </div>
+
+      <div class="list" ui-sref="shopDetail({orderRoute:3})">
+        <div class="row">
+          <div class="col-33">
+            <img src="img/demo.png" class="wh100">
+          </div>
+          <div class="col col-center">
+            <div class="row">
+              <div class="col">
+                美宣养荣可大可会所
+              </div>
+            </div>
+            <div class="row">
+              <div class="col">
+                <ul>
+                  <li><img class="star" src="img/coffeeStar.png"></li>
+                  <li><img class="star" src="img/coffeeStar.png"></li>
+                  <li><img class="star" src="img/coffeeStar.png"></li>
+                  <li><img class="star" src="img/coffeeStar.png"></li>
+                  <li><img class="star" src="img/coffeeStar.png"></li>
+                </ul>
+                <span class="coffee-font font-16">3.5分</span>
+              </div>
+            </div>
+            <div class="row gray-font font-16">
+              <div class="col">
+                <img class="location" style="vertical-align: middle;max-height: 16px;" src="img/geo.png">
+                <span style="vertical-align: middle;" class="font-14">海淀区苏州街108号，紫金花园11栋3单元</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </ion-content>
+
+</ion-view>

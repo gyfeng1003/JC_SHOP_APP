@@ -1,0 +1,30 @@
+<ion-view class="mine setting account">
+  <div class="bar bar-header">
+    <a id="left-icon" class="button icon ion-ios-arrow-left  button-clear" ng-click="go(-1);"></a>
+    <h4 id="header-title">账户信息</h4>
+  </div>
+  <ion-content overflow-scroll="true" class="has-header gray-bg" id="scrollBar" ng-click="cancel()">
+    <ion-list class="funcItem">
+      <ion-item>
+        <div class="row" ng-click="imgSelect()">
+          <div class="col-75 col-center">头像</div>
+          <div class="photo" >
+            <img ng-src="{{headPhoto}}"/>
+          </div>
+          <div class="col col-center text-right">
+            <i class="ion-ios-arrow-right gray-font font-26"></i>
+          </div>
+        </div>
+      </ion-item>
+      <ion-item>
+        <div class="row" ng-click="setUserName()">
+          <div class="col col-center">用户名</div>
+          <div class="col col-center text-right">
+            {{userObj.name}}
+          </div>
+          <div class="col-10 col-center text-right"><i class="ion-ios-arrow-right gray-font font-26"></i></div>
+        </div>
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>

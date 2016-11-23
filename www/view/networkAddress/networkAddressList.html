@@ -1,0 +1,40 @@
+<ion-view class="networkAddress">
+  <div class="bar bar-header">
+    <a class="button icon-left ion-chevron-left button-clear button-dark" ui-sref="home"></a>
+    <h1 class="title">网点查询</h1>
+    <lable class="button">地图</lable>
+  </div>
+  <ion-content>
+    <margin-top></margin-top>
+    <div class="list searchList">
+      <div class="item item-input-inset">
+        <label class="item-input-wrapper">
+          <i class="ion-search"></i>
+          <input type="text" placeholder="请输入电话,城市,营业部名称"/>
+        </label>
+        <button class="button button-small">查询</button>
+      </div>
+    </div>
+    <div class="card" ng-repeat="network in networkList">
+        <div class="row">
+          <div class="col col-75 name">{{network.name}}</div>
+          <div class="col col-25 text-right location"><i class="ion-location" ></i>{{network.location}}</div>
+        </div>
+        <div class="row">
+          <div class="col address"><i class="ion-location"></i>{{network.address}}</div>
+        </div>
+        <div class="row">
+          <div class="col operation"><i class="ion-clipboard"></i>{{network.operation}}</div>
+        </div>
+        <div class="row">
+          <div class="col tel"><i class="ion-ipod"></i>{{network.tel}}</div>
+        </div>
+      <div class="item-divider">
+        <div class="button-bar bar-light">
+          <a class="button" style="border-right: 1px solid 	#708090" ng-click="show(network)">立即下单</a>
+          <a class="button">到这里去</a>
+        </div>
+      </div>
+    </div>
+  </ion-content>
+</ion-view>

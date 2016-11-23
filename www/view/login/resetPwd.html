@@ -1,0 +1,23 @@
+<ion-view class="changePassword" cache-view="false">
+  <div class="bar bar-header">
+    <a id="left-icon" class="button icon ion-ios-arrow-left button-clear button-dark" ng-click="go(-1);"></a>
+    <h4 id="header-title">重置密码</h4>
+  </div>
+  <ion-content class="has-header" overflow-scroll="true" id="scrollBar">
+    <form name="resetPwdForm" id="resetPwdForm" novalidate>
+      <div class="list">
+        <label class="item item-input">
+          <span class="input-label font-14">新密码：</span>
+          <input type="password" placeholder="请输入您的新密码" ng-model="pwd.newPassword" required/>
+        </label>
+        <label class="item item-input">
+          <span class="input-label  font-14">确认密码：</span>
+          <input type="password" placeholder="请输入您的确认密码" ng-model="pwd.againPassword" required/>
+        </label>
+      </div>
+      <div class="padding">
+        <button class="button button-block orange-bg"  ng-disabled="resetPwdForm.$invalid" ng-click="resetPwd()">重置</button>
+      </div>
+    </form>
+  </ion-content>
+</ion-view>

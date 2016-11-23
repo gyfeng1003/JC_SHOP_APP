@@ -1,0 +1,28 @@
+<ion-view id="register">
+  <div class="bar bar-header">
+    <a id="left-icon" class="button icon ion-ios-arrow-left button-clear button-dark" ng-click="go(-1);"></a>
+    <h4 id="header-title">重置密码</h4>
+  </div>
+  <ion-content overflow-scroll="true" id="scrollBar" class="has-header">
+    <form novalidate name="registForm">
+      <div class="content has-header">
+        <div class="list">
+          <row class="item item-input" style="padding-top: 0;padding-bottom: 0;">
+            <input type="tel" ng-model="registUser.phoneNumber" placeholder="手机号" required>
+              <span class="validcode font-14" ng-click="sendPhonecode()"
+                    ng-class="paraclass" ng-bind="paracont"></span>
+          </row>
+          <label class="item item-input">
+            <input type="text" ng-model="registUser.identifyingCode"  placeholder="短信验证码" required>
+          </label>
+          <label class="item item-input">
+            <input type="password" ng-model="registUser.password" ng-minlength="6" ng-maxlength="10" placeholder="密码由6-16个数字、字母和英文字符组成" required>
+          </label>
+        </div>
+        <div class="padding">
+          <button class="button button-block cyan-btn font-18" ng-disabled="registForm.$invalid" ng-click="register();">提交</button>
+        </div>
+      </div>
+    </form>
+  </ion-content>
+</ion-view>

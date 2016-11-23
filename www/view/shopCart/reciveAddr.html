@@ -1,0 +1,26 @@
+<ion-view id="register receiveAddr">
+  <div class="bar bar-header">
+    <a id="left-icon" class="button icon ion-ios-arrow-left button-clear button-dark" ng-click="go(-1);"></a>
+    <h4 id="header-title">收货地址</h4>
+  </div>
+  <ion-content overflow-scroll="true" id="scrollBar" class="has-header gray-bg">
+    <form novalidate name="addrForm">
+      <div class="content" style="border-top: 10px solid #eee;">
+        <div class="list">
+          <row class="item item-input">
+            <input type="text" ng-model="addr.phoneNumber" placeholder="收货人" required>
+          </row>
+          <label class="item item-input">
+            <input type="tel" ng-model="addr.identifyingCode"  placeholder="手机号码" required>
+          </label>
+          <label class="item item-input">
+            <input type="text" ng-model="addr.password" placeholder="详细地址" required>
+          </label>
+        </div>
+        <div class="padding">
+          <button class="button button-block cyan-btn font-18" ng-disabled="addrForm.$invalid" ng-click="saveAddr();">确定</button>
+        </div>
+      </div>
+    </form>
+  </ion-content>
+</ion-view>

@@ -1,0 +1,160 @@
+<ion-view class="productDetail">
+  <div class="bar bar-header">
+    <a id="left-icon" class="button icon ion-ios-arrow-left  button-clear" ng-click="go(-1);"></a>
+    <h4 id="header-title">商品</h4>
+  </div>
+  <ion-content overflow-scroll="true" class="has-header has-footer gray-bg" id="scrollBar" ng-click="cancel()">
+    <div class="list">
+      <div class="condition row text-center white-bg" style="height: 40px;line-height: 40px;">
+        <div class="col activeStatus" >商品</div>
+        <div class="col" >详情</div>
+        <div class="col" >评价</div>
+      </div>
+      <div ng-show="content==1">
+        <ion-slide-box show-pager="true" auto-play="true" does-continue="true" slide-interval="3000">
+          <ion-slide ng-repeat="imgUrl in imgUrls track by $index">
+            <div class="box">
+              <img ng-src={{imgUrl}}>
+            </div>
+          </ion-slide>
+        </ion-slide-box>
+        <div class="list intro">
+          <div class="row">
+            <div class="col desc font-16">临额而非是的地方地方的肉肉烦烦烦打断点临额而非是的地方地方的肉肉烦烦烦打断点</div>
+          </div>
+          <div class="row paddingb0">
+            <div class="col">
+              <span class="pric">￥566-1326</span>
+              <span class="del-line gray-font">￥345</span>
+            </div>
+            <div class="col text-right gray-font">
+              已售35200
+            </div>
+          </div>
+        </div>
+        <div class="list intro padding-lr0 paddingb0">
+          <div class="row paddingl10 padding-r10 font-16" ng-click="openSpecModal($event);">
+            <div class="col-20">产品规格</div>
+            <div class="col"></div>
+            <div class="col-10 text-right"><i class="ion-chevron-right gray-font"></i></div>
+          </div>
+          <div class="end-line"></div>
+          <div class="row paddingl10 padding-r10 font-16" ng-click="openParamModal($event);">
+            <div class="col-20">产品参数</div>
+            <div class="col">{{spec.productSpce}}</div>
+            <div class="col-10 text-right"><i class="ion-chevron-right gray-font"></i></div>
+          </div>
+        </div>
+        <div class="list intro padding-lr0" style="background: #f3f3f3;">
+          <div class="row paddingl10 padding-r10 font-14 gray-font">
+            <div class="col">.品牌直营</div>
+            <div class="col">.正品保证</div>
+            <div class="col-33">.24小时内发货</div>
+            <div class="col">.极速退款</div>
+          </div>
+        </div>
+        <!--1111111
+        <div class="padding">
+          <a class="button button-block cyan-btn font-18" ui-sref="order({product:null})">立即下单</a>
+        </div>-->
+      </div>
+      <div ng-show="content==2">
+        2222222
+      </div>
+      <div ng-show="content==3">
+        <div class="end-line"></div>
+        <div class="list intro evaluation">
+          <div class="row">
+            <div class="col text-center col-center">评价</div>
+            <div class="col-67"><input type="text"></div>
+            <div class="col text-center col-center">发送</div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <a class="button font-14">全部</a>
+              <a class="button font-14">好评2304</a>
+              <a class="button font-14">差评12</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="list intro end-line paddingb0">
+          <div class="row padding-t0 paddingb0">
+            <div class="col">
+              <div class="row">
+                轻***7
+              </div>
+              <div class="row">
+                货物已经收到，还不错的样子。 货物已经收到，还不错的样子 货物已经收到，还不错的样子
+              </div>
+              <div class="row">
+                <span class="gray-font">2016.10.27&nbsp;规格:100ML</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="list intro end-line paddingb0">
+          <div class="row padding-t0 paddingb0">
+            <div class="col">
+              <div class="row">
+                轻***7
+              </div>
+              <div class="row">
+                货物已经收到，还不错的样子。 货物已经收到，还不错的样子 货物已经收到，还不错的样子
+              </div>
+              <div class="row">
+                <span class="gray-font">2016.10.27&nbsp;规格:100ML</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="list intro end-line paddingb0">
+          <div class="row padding-t0 paddingb0">
+            <div class="col">
+              <div class="row">
+                轻***7
+              </div>
+              <div class="row">
+                货物已经收到，还不错的样子。 货物已经收到，还不错的样子 货物已经收到，还不错的样子
+              </div>
+              <div class="row">
+                <span class="gray-font">2016.10.27&nbsp;规格:100ML</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="list intro end-line paddingb0">
+          <div class="row padding-t0 paddingb0">
+            <div class="col">
+              <div class="row">
+                轻***7
+              </div>
+              <div class="row">
+                货物已经收到，还不错的样子。 货物已经收到，还不错的样子 货物已经收到，还不错的样子
+              </div>
+              <div class="row">
+                <span class="gray-font">2016.10.27&nbsp;规格:100ML</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+      </div>
+    </div>
+  </ion-content>
+  <div class="bar bar-footer padding-lr0">
+    <div class="row text-center col-center">
+      <div class="col-40 col-center">
+        <span class="font-16">价格：</span><span class="font-18 red-font">￥566.00</span>
+      </div>
+      <div class="col coffee-btn white-font font-18" style="line-height: 44px;" ui-sref="subscribeDetail">
+        加入购物车
+      </div>
+      <div class="col red-bg white-font font-18" style="line-height: 44px;" ng-click="toBuy($event);">
+        立即购买
+      </div>
+    </div>
+  </div>
+</ion-view>

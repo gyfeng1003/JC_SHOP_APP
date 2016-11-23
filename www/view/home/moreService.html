@@ -1,0 +1,29 @@
+<ion-view class="serviceProduct">
+  <div class="bar bar-header">
+    <a id="left-icon" class="button icon ion-ios-arrow-left  button-clear" ng-click="go(-1);"></a>
+    <h4 id="header-title">服务产品</h4>
+  </div>
+  <ion-content overflow-scroll="true" class="has-header gray-bg" id="scrollBar" ng-click="cancel()">
+    <div class="list result" ui-sref="productDetail">
+      <div class="row">
+        <div class="col">
+          <img src="img/service1.jpg">
+        </div>
+      </div>
+    </div>
+    <div class="list result" ui-sref="productDetail">
+      <div class="row">
+        <div class="col">
+          <img src="img/service2.jpg">
+        </div>
+      </div>
+    </div>
+    <div class="list result" ui-sref="productDetail">
+      <div class="row">
+        <div class="col">
+          <img src="img/service3.jpg">
+        </div>
+      </div>
+    </div>
+  </ion-content>
+</ion-view>

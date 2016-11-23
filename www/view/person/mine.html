@@ -1,0 +1,201 @@
+<ion-view class="mine">
+ <!-- <div class="bar bar-header padding-lr0">
+    <a id="left-icon" class="button icon ion-ios-arrow-left  button-clear"></a>
+    <h4 id="header-title">服务产品111</h4>
+  </div>-->
+  <ion-content overflow-scroll="true" class="has-footer gray-bg" id="scrollBar" ng-click="cancel()">
+    <div class="card head-portrait" ng-click="imgselect()">
+      <img class="portrait" src="img/mine_yong.png"/>
+      <div class="loginUser" ng-if="!isLogin">
+        <div class="row" style="margin-bottom: 8px;"><div class="col text-center  white-font">请登录</div></div>
+      </div>
+      <div class="loginUser" style="bottom: 38px;" ng-if="isLogin" ui-sref="accountInfo">
+        <div class="row"><div class="col text-center  white-font font-16">刘某某</div></div>
+        <div class="row"><div class="col text-center  white-font">会员号码：1223344455</div></div>
+      </div>
+    </div>
+    <div class="list white-bg paddingb0 padding-t0">
+      <div class="row tabItem" style="height: 40px;line-height: 40px;">
+        <div class="col text-left" >
+          <span class="coffee-font">已预约</span>
+        </div>
+        <div class="col text-right">
+          <span class="gray-font">订单号：12233445555</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="list">
+      <div class="row text-center">
+        <div class="col-40 col-offset-10" >
+          <span class="font-26">12月22日</span>
+          <span>今天</span>
+        </div>
+        <div class="col-40" >
+          <span class="font-26">16:00</span>
+          <span>下午</span>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col col-offset-10" >
+          <span class="gray-font">服务产品：面部去皱美容</span>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col col-offset-10" >
+          <span class="gray-font">美容师：贝贝</span>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col col-offset-10" >
+          <span class="gray-font">地址：昭阳区133444号</span>
+        </div>
+      </div>
+    </div>
+
+    <ion-list class="funcItem">
+      <ion-item>
+        <div class="row">
+          <div class="col col-center">我的消息</div>
+          <div class="col col-center text-right"><i class="ion-ios-arrow-right gray-font font-26"></i></div>
+        </div>
+      </ion-item>
+      <ion-item>
+        <div class="row">
+          <div class="col col-center">预约记录</div>
+          <div class="col col-center text-right"><i class="ion-ios-arrow-right gray-font font-26"></i></div>
+        </div>
+      </ion-item>
+      <ion-item>
+        <div class="row">
+          <div class="col col-center">客服</div>
+          <div class="col col-center text-right"><i class="ion-ios-arrow-right gray-font font-26"></i></div>
+        </div>
+      </ion-item>
+      <ion-item>
+        <div class="row">
+          <div class="col col-center">帮助</div>
+          <div class="col col-center text-right"><i class="ion-ios-arrow-right gray-font font-26"></i></div>
+        </div>
+      </ion-item>
+      <ion-item>
+        <div class="row"  ui-sref="setting">
+          <div class="col col-center">设置</div>
+          <div class="col col-center text-right"><i class="ion-ios-arrow-right gray-font font-26"></i></div>
+        </div>
+      </ion-item>
+    </ion-list>
+  <!--  <div class="list">
+      <div class="row text-center tabItem" style="height: 40px;line-height: 40px;">
+        <div class="col activeStatus" >
+          全部订单
+        </div>
+        <div class="col">
+          待预约
+        </div>
+        <div class="col">
+          已预约
+        </div>
+        <div class="col">
+          待评价
+        </div>
+        <div class="col">
+          已完成
+        </div>
+      </div>
+    </div>
+    <div class="end-line"></div>
+    <div class="list product">
+      <div class="row">
+        <div class="col col-center" style="display: inline-block">
+          <a><img class="wh24" style="vertical-align: bottom" src="img/proc.png"></a>
+          <span class="font-16">刘某楼专属产品</span>
+        </div>
+       &lt;!&ndash; <div class="col">
+
+        </div>&ndash;&gt;
+        <div class="cyan-font text-right" ng-show="true">待预约</div>
+      &lt;!&ndash;  <span>已预约</span>
+        <span>待评价</span>
+        <span>已完成</span>&ndash;&gt;
+      </div>
+      <div class="row">
+        <div class="col-33">
+          <img class="wh100" src="img/demo.png">
+        </div>
+        <div class="col-67">
+          <div class="row">订单号：123456678789798</div>
+          <div class="row">数量：1</div>
+          <div class="row">总价：￥200</div>
+        </div>
+      </div>
+      <div class="row">
+         <div class="col text-right">
+           <a class="button" ui-sref="shopDetail({orderRoute: 1})">立即预约</a>
+         </div>
+      </div>
+    </div>
+
+    <div class="list product">
+      <div class="row">
+        <div class="col col-center" style="display: inline-block">
+          <a><img class="wh24" style="vertical-align: bottom" src="img/proc.png"></a>
+          <span class="font-16">刘某楼专属产品</span>
+        </div>
+        &lt;!&ndash; <div class="col">
+
+         </div>&ndash;&gt;
+        <div class="cyan-font text-right" ng-show="true">已预约</div>
+        &lt;!&ndash;  <span>已预约</span>
+          <span>待评价</span>
+          <span>已完成</span>&ndash;&gt;
+      </div>
+      <div class="row">
+        <div class="col-33">
+          <img class="wh100" src="img/demo.png">
+        </div>
+        <div class="col-67">
+          <div class="row">订单号：123456678789798</div>
+          <div class="row">数量：1</div>
+          <div class="row">总价：￥200</div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col text-right">
+          <a class="button" ui-sref="subscribeDetail">查看详情</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="list product">
+      <div class="row">
+        <div class="col col-center" style="display: inline-block">
+          <a><img class="wh24" style="vertical-align: bottom" src="img/proc.png"></a>
+          <span class="font-16">刘某楼专属产品</span>
+        </div>
+        &lt;!&ndash; <div class="col">
+
+         </div>&ndash;&gt;
+        <div class="cyan-font text-right" ng-show="true">待评价</div>
+        &lt;!&ndash;  <span>已预约</span>
+          <span>待评价</span>
+          <span>已完成</span>&ndash;&gt;
+      </div>
+      <div class="row">
+        <div class="col-33">
+          <img class="wh100" src="img/demo.png">
+        </div>
+        <div class="col-67">
+          <div class="row">订单号：123456678789798</div>
+          <div class="row">数量：1</div>
+          <div class="row">总价：￥200</div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col text-right">
+          <a class="button" ui-sref="evaluate">立即评价</a>
+        </div>
+      </div>
+    </div>-->
+  </ion-content>
+</ion-view>

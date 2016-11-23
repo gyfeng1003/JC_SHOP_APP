@@ -1,0 +1,84 @@
+<ion-view class="payOrder">
+  <div class="bar bar-header">
+   <!-- <a id="left-icon" ng-if="payOrderRouter==1" class="button icon ion-ios-arrow-left  button-clear" ui-sref="order"></a>-->
+   <!-- <a id="left-icon" ng-if="payOrderRouter==2" class="button icon ion-ios-arrow-left  button-clear" ui-sref="tab.shopCar"></a>-->
+    <a id="left-icon" class="button icon ion-ios-arrow-left  button-clear" ng-click="go(-1)"></a>
+    <h4 id="header-title">支付订单</h4>
+  </div>
+  <ion-content overflow-scroll="true" class="has-header" id="scrollBar">
+    <div class="list white-bg buyGoods">
+      <div class="row">
+        <div class="col text-center"><span class="font-18">付款金额：</span>
+          <span class="font-18 red-font">￥4218.00</span>
+        </div>
+        <!--<div class="col-25">
+          <img class="wh100" src="img/demo.png">
+        </div>
+        <div class="col-75">
+          <div class="row">
+            <div class="col font-26">
+              <span>￥200</span>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col font-16">
+              <span style="padding-bottom: 4px;">李某某的个人专属产品</span></div>
+          </div>
+        </div>-->
+      </div>
+    </div>
+    <div class="list white-bg meth">
+      <div class="row">
+        <div class="col">
+            <div class="wh28 wxbg"></div>
+        </div>
+        <div class="col-75">
+            <div class="row">
+              微信支付
+            </div>
+            <div class="row gray-font">
+              推荐安装微信5.0及以上版本的用户使用
+            </div>
+        </div>
+        <div class="col text-right">
+          <div class="in-block" ng-click="setStatus()" ng-class="{'choosed': choosed==1, 'unchoose':choosed==0}"></div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <div class="wh28 paybg"></div>
+        </div>
+        <div class="col-75">
+          <div class="row">
+            支付宝支付
+          </div>
+          <div class="row gray-font">
+            推荐安装微信5.0及以上版本的用户使用
+          </div>
+        </div>
+        <div class="col text-right">
+          <div  class="in-block" ng-click="setStatus()" ng-class="{'choosed': choosed==1, 'unchoose':choosed==0}"></div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <div class="wh28 bankbg"></div>
+        </div>
+        <div class="col-75">
+          <div class="row">
+            银行卡支付
+          </div>
+          <div class="row gray-font">
+            推荐安装微信5.0及以上版本的用户使用
+          </div>
+        </div>
+        <div class="col text-right">
+          <div  class="in-block" ng-click="setStatus()" ng-class="{'choosed': choosed==1, 'unchoose':choosed==0}"></div>
+        </div>
+      </div>
+    </div>
+    <div class="padding">
+      <a class="button button-block cyan-btn font-18" ui-sref="finishPay">确认支付<span class="confirmPay">￥200</span></a>
+    </div>
+  </ion-content>
+</ion-view>

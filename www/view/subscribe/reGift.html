@@ -1,0 +1,60 @@
+<ion-view class="finishPay subDetail regift">
+  <div class="bar bar-header">
+    <a id="left-icon" class="button icon ion-ios-arrow-left  button-clear"  ng-click="go(-1);"></a>
+    <h4 id="header-title">转赠朋友</h4>
+  </div>
+  <ion-content overflow-scroll="true" class="has-header" id="scrollBar" >
+    <div class="list card first padding-lr0">
+      <div class="item item-body">
+        <div class="row">
+          <div class="col text-center">
+            <span style="vertical-align: middle" class="font-16">刘某某，您即将以下预约订单转赠给好友</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="list card second">
+      <div class="item item-divider item-stable gray-font paddingl10"><img style="vertical-align: middle;max-width: 24px;" src="img/tip.png">&nbsp;预约信息</div>
+      <div class="item item-body black-font paddingl10">
+        <div class="row contentInfo">
+          <span class="gray-font">商品名称：</span><span>刘某某专属茶品</span>
+        </div>
+        <div class="row contentInfo">
+           <span class="gray-font">预约店家：</span><span>美容可大可会所</span>
+        </div>
+        <div class="row contentInfo">
+           <span class="gray-font">美容师：</span><span>贝贝</span>
+        </div>
+        <div class="row contentInfo">
+           <span class="gray-font">预约时间：</span><span>2016-08-20 19:20</span>
+        </div>
+        <div class="row contentInfo">
+           <span class="gray-font">订单号：</span><span>1223333333454</span>
+        </div>
+      </div>
+    </div>
+    <div class="list card second padding-lr0">
+      <div class="item item-body black-font">
+        <div class="row paddingtb10">
+          <div class="col text-center  item-input-inset">
+            <label class="item-input-wrapper">
+              <img src="img/friendName.png">
+              <input type="text" placeholder="请输入您朋友的名称">
+            </label>
+          </div>
+        </div>
+        <div class="row text-center paddingtb10">
+          <div class="col text-center  item-input-inset">
+            <label class="item-input-wrapper">
+              <img src="img/friendPhone.png">
+                <input type="text" placeholder="请输入您朋友的电话">
+            </label>
+          </div>
+        </div>
+        <div class="padding padding10">
+          <a class="button button-block coffee-btn font-18" ui-sref="finishRegift">确定</a>
+        </div>
+      </div>
+    </div>
+  </ion-content>
+</ion-view>

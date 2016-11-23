@@ -1,0 +1,302 @@
+<ion-view class=" mine subscribe">
+  <div class="bar bar-header padding-lr0">
+   <!-- <a id="left-icon" class="button icon ion-ios-arrow-left  button-clear" ui-sref="tab.shopCar"></a>-->
+    <h4 id="header-title">预约</h4>
+  </div>
+  <ion-content overflow-scroll="true" class="has-header has-footer" style="background: #f3f3f3" id="scrollBar" ng-click="cancel()">
+    <div class="list head font-16">
+      <div class="row paddingl10 padding-r10 text-center">
+          <div class="col-33 padding activeStatus">未预约</div>
+          <div class="col-33 padding">已预约</div>
+          <div class="col-33 padding">已完成</div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col text-right padding-r10 gray-font"><img style="vertical-align: middle;width: 12px;margin-right: 4px;" src="img/why.png"><span style="vertical-align: middle;font-size: 12px;">使用说明</span></div>
+    </div>
+    <div ng-if="content==1">
+      <div class="list product">
+        <div class="row">
+          <div class="col col-center" style="display: inline-block">
+            <a><img class="wh24" style="vertical-align: middle" src="img/proc.png"></a>
+            <span class="font-16" style="vertical-align: middle">刘某楼专属产品</span>
+          </div>
+          <!-- <div class="col">
+
+           </div>-->
+          <div class="coffee-font text-right" ng-show="true">待预约</div>
+          <!--  <span>已预约</span>
+            <span>待评价</span>
+            <span>已完成</span>-->
+        </div>
+      </div>
+      <div class="list padding-lr0">
+        <div class="row">
+          <div class="col-33 paddingl10 paddingt10">
+            <img class="wh100" src="img/demo.png">
+          </div>
+          <div class="col paddingtb10 col-center">
+            <div class="row"><div class="col font-16">面部肌肤美白护理</div></div>
+            <div class="row"><div class="col gray-font">订单号：123456678789798</div></div>
+            <div class="row"><div class="col gray-font">总次数：12</div></div>
+            <div class="row"><div class="col red-font">未使用</div></div>
+          </div>
+          <div class="col-16 text-center red-bg white-font relepos" ui-sref="shops">
+            <span class="subs">预约</span>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-33 paddingl10 paddingt10">
+            <img class="wh100" src="img/demo.png">
+          </div>
+          <div class="col paddingtb10 col-center">
+            <div class="row"><div class="col font-16">面部肌肤美白护理</div></div>
+            <div class="row"><div class="col gray-font">订单号：123456678789798</div></div>
+            <div class="row"><div class="col gray-font">总次数：12</div></div>
+            <div class="row"><div class="col">未使用<span class="red-font">8</span>次</span></div></div>
+          </div>
+          <div class="col-16 text-center red-bg white-font relepos"  ui-sref="shops">
+            <span class="subs">预约</span>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-33 paddingl10 paddingt10">
+            <img class="wh100" src="img/demo.png">
+          </div>
+          <div class="col paddingtb10 col-center">
+            <div class="row"><div class="col font-16">面部肌肤美白护理</div></div>
+            <div class="row"><div class="col gray-font">订单号：123456678789798</div></div>
+            <div class="row"><div class="col gray-font">总次数：12</div></div>
+            <div class="row"><div class="col">未使用<span class="red-font">8</span>次</span></div></div>
+          </div>
+          <div class="col-16 text-center red-bg white-font relepos"  ui-sref="shops">
+            <span class="subs">预约</span>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-33 paddingl10 paddingt10">
+            <img class="wh100" src="img/demo.png">
+          </div>
+          <div class="col paddingtb10 col-center">
+            <div class="row"><div class="col font-16">面部肌肤美白护理</div></div>
+            <div class="row"><div class="col gray-font">订单号：123456678789798</div></div>
+            <div class="row"><div class="col gray-font">总次数：12</div></div>
+            <div class="row"><div class="col">未使用<span class="red-font">8</span>次</span></div></div>
+          </div>
+          <div class="col-16 text-center red-bg white-font relepos" ui-sref="shops">
+            <span class="subs">预约</span>
+          </div>
+        </div>
+        <!-- <div class="row">
+           <div class="col text-right">
+             <a class="button" ui-sref="shopDetail({orderRoute: 2})">立即预约</a>
+           </div>
+         </div>-->
+      </div>
+    </div>
+
+    <!--已预约-->
+    <div ng-if="content==2">
+      <div class="list product">
+        <div class="row">
+          <div class="col col-center" style="display: inline-block">
+            <a><img class="wh24" style="vertical-align: bottom" src="img/proc.png"></a>
+            <span class="font-16">刘某楼专属产品</span>
+          </div>
+          <!-- <div class="col">
+
+           </div>-->
+          <div class="coffee-font text-right" ng-show="true">已预约</div>
+          <!--  <span>已预约</span>
+            <span>待评价</span>
+            <span>已完成</span>-->
+        </div>
+      </div>
+      <div class="list padding-lr0">
+        <div class="wait">
+          <div class="row subwait">
+            <div class="col-33 paddingl10 paddingt10">
+              <img class="wh100" src="img/demo.png">
+            </div>
+            <div class="col paddingtb10">
+              <div class="row"><div class="col font-16">面部肌肤美白护理</div></div>
+              <div class="row"><div class="col gray-font">订单号：123456678789798</div></div>
+              <div class="row"><div class="col gray-font">总次数：12</div></div>
+              <div class="row"><div class="col">未使用<span class="red-font">8</span>次</span></div></div>
+            </div>
+            <span class="line-h coffee-font padding-r10" ui-sref="subscribeDetail">预约详情</span>
+          </div>
+          <div class="row gray-font padding-r10 paddingl10">
+            时间：10月25日 &nbsp;&nbsp;周二 16:00
+          </div>
+          <div class="row gray-font padding-r10 paddingl10">
+            地点：薇婷美容护理中心（望京悠乐汇C座1202）
+          </div>
+        </div>
+        <div class="wait">
+          <div class="row subwait">
+            <div class="col-33 paddingl10 paddingt10">
+              <img class="wh100" src="img/demo.png">
+            </div>
+            <div class="col paddingtb10">
+              <div class="row"><div class="col font-16">面部肌肤美白护理</div></div>
+              <div class="row"><div class="col gray-font">订单号：123456678789798</div></div>
+              <div class="row"><div class="col gray-font">总次数：12</div></div>
+              <div class="row"><div class="col">未使用<span class="red-font">8</span>次</span></div></div>
+            </div>
+            <span class="line-h coffee-font padding-r10" ui-sref="subscribeDetail">预约详情</span>
+          </div>
+          <div class="row gray-font padding-r10 paddingl10">
+            时间：10月25日 &nbsp;&nbsp;周二 16:00
+          </div>
+          <div class="row gray-font padding-r10 paddingl10">
+            地点：薇婷美容护理中心（望京悠乐汇C座1202）
+          </div>
+        </div>
+        <div class="wait">
+          <div class="row subwait">
+            <div class="col-33 paddingl10 paddingt10">
+              <img class="wh100" src="img/demo.png">
+            </div>
+            <div class="col paddingtb10">
+              <div class="row"><div class="col font-16">面部肌肤美白护理</div></div>
+              <div class="row"><div class="col gray-font">订单号：123456678789798</div></div>
+              <div class="row"><div class="col gray-font">总次数：12</div></div>
+              <div class="row"><div class="col">未使用<span class="red-font">8</span>次</span></div></div>
+            </div>
+            <span class="line-h coffee-font padding-r10"ui-sref="subscribeDetail">预约详情</span>
+          </div>
+          <div class="row gray-font padding-r10 paddingl10">
+            时间：10月25日 &nbsp;&nbsp;周二 16:00
+          </div>
+          <div class="row gray-font padding-r10 paddingl10">
+            地点：薇婷美容护理中心（望京悠乐汇C座1202）
+          </div>
+        </div>
+        <div class="wait">
+          <div class="row subwait">
+            <div class="col-33 paddingl10 paddingt10">
+              <img class="wh100" src="img/demo.png">
+            </div>
+            <div class="col paddingtb10">
+              <div class="row"><div class="col font-16">面部肌肤美白护理</div></div>
+              <div class="row"><div class="col gray-font">订单号：123456678789798</div></div>
+              <div class="row"><div class="col gray-font">总次数：12</div></div>
+              <div class="row"><div class="col">未使用<span class="red-font">8</span>次</span></div></div>
+            </div>
+            <span class="line-h coffee-font padding-r10"ui-sref="subscribeDetail">预约详情</span>
+          </div>
+          <div class="row gray-font padding-r10 paddingl10">
+            时间：10月25日 &nbsp;&nbsp;周二 16:00
+          </div>
+          <div class="row gray-font padding-r10 paddingl10">
+            地点：薇婷美容护理中心（望京悠乐汇C座1202）
+          </div>
+        </div>
+        <!-- <div class="row">
+           <div class="col text-right">
+             <a class="button" ui-sref="shopDetail({orderRoute: 2})">立即预约</a>
+           </div>
+         </div>-->
+      </div>
+
+    </div>
+
+    <!--已完成-->
+    <div ng-if="content==3">
+      <div class="list product">
+        <div class="row">
+          <div class="col col-center" style="display: inline-block">
+            <a><img class="wh24" style="vertical-align: bottom" src="img/proc.png"></a>
+            <span class="font-16">刘某楼专属产品</span>
+          </div>
+          <!-- <div class="col">
+
+           </div>-->
+          <div class="coffee-font text-right" ng-show="true">已完成</div>
+          <!--  <span>已预约</span>
+            <span>待评价</span>
+            <span>已完成</span>-->
+        </div>
+      </div>
+      <div class="list padding-lr0">
+        <div class="row">
+          <div class="col-33 paddingl10 paddingt10">
+            <img class="wh100" src="img/demo.png">
+          </div>
+          <div class="col paddingtb10 col-center">
+            <div class="row"><div class="col font-16">面部肌肤美白护理</div></div>
+            <div class="row"><div class="col gray-font">订单号：123456678789798</div></div>
+            <div class="row"><div class="col gray-font">总次数：12</div></div>
+            <div class="row"><div class="col gray-font">已完成2次</div></div>
+          </div>
+         <!-- <div class="col-16 text-center gray-font relepos">-->
+            <span class="line-h gray-font padding-r10">已完成</span>
+        <!--  </div>-->
+        </div>
+        <div class="row">
+          <div class="col-33 paddingl10 paddingt10">
+            <img class="wh100" src="img/demo.png">
+          </div>
+          <div class="col paddingtb10 col-center">
+            <div class="row"><div class="col font-16">面部肌肤美白护理</div></div>
+            <div class="row"><div class="col gray-font">订单号：123456678789798</div></div>
+            <div class="row"><div class="col gray-font">总次数：12</div></div>
+            <div class="row"><div class="col gray-font">已完成2次</div></div>
+          </div>
+          <span class="line-h gray-font padding-r10">已完成</span>
+        </div>
+        <div class="row">
+          <div class="col-33 paddingl10 paddingt10">
+            <img class="wh100" src="img/demo.png">
+          </div>
+          <div class="col paddingtb10 col-center">
+            <div class="row"><div class="col font-16">面部肌肤美白护理</div></div>
+            <div class="row"><div class="col gray-font">订单号：123456678789798</div></div>
+            <div class="row"><div class="col gray-font">总次数：12</div></div>
+            <div class="row"><div class="col gray-font">已完成2次</div></div>
+          </div>
+          <span class="line-h gray-font padding-r10">已完成</span>
+        </div>
+        <!-- <div class="row">
+           <div class="col text-right">
+             <a class="button" ui-sref="shopDetail({orderRoute: 2})">立即预约</a>
+           </div>
+         </div>-->
+      </div>
+    </div>
+
+    <!--  <div class="list product">
+        <div class="row">
+          <div class="col col-center" style="display: inline-block">
+            <a><img class="wh24" style="vertical-align: bottom" src="img/proc.png"></a>
+            <span class="font-16">刘某楼专属产品</span>
+          </div>
+          &lt;!&ndash; <div class="col">
+
+           </div>&ndash;&gt;
+          <div class="cyan-font text-right" ng-show="true">待预约</div>
+          &lt;!&ndash;  <span>已预约</span>
+            <span>待评价</span>
+            <span>已完成</span>&ndash;&gt;
+        </div>
+        <div class="row">
+          <div class="col-33">
+            <img class="wh100" src="img/demo.png">
+          </div>
+          <div class="col-67">
+            <div class="row"><div class="col-33 text-right">订单号：</div>123456678789798</div>
+            <div class="row"><div class="col-33 text-right">数量：</div>1</div>
+            <div class="row"><div class="col-33 text-right">总价：</div>￥200</div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col text-right">
+            <a class="button" ui-sref="shopDetail({orderRoute: 2})">立即预约</a>
+          </div>
+        </div>
+      </div>-->
+
+
+  </ion-content>
+</ion-view>

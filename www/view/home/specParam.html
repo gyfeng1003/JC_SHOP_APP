@@ -1,0 +1,25 @@
+<ion-popover-view class="param">
+  <ion-content>
+    <ion-list>
+      <ion-item>
+        <div class="row">
+          <div class="col">净含量</div>
+        </div>
+        <div id="spec1" class="row row-wrap paddingtb10">
+          <div class="col-25 paddingtb5 padding-r10" ng-repeat="spec in productSize">
+            <p ng-class="{selected: spec.isActive}" class="button button-outline button-stable specBtn"
+               ng-click="getSpec(spec)"
+            >{{spec.productSpce}}</p>
+          </div>
+        </div>
+      </ion-item>
+    </ion-list>
+  </ion-content>
+  <div class="bar bar-footer padding-lr0">
+    <div class="row text-center col-center">
+      <div class="col red-bg white-font font-18" style="line-height: 44px;" ng-click="close();">
+        确定
+      </div>
+    </div>
+  </div>
+</ion-popover-view>

@@ -1,0 +1,73 @@
+<div class="index header-input">
+  <div class="bar bar-header padding-lr0">
+    <div class="col text-center col-center" ng-click="selectCity();">
+      <div class="row">
+        <div class="col col-center">
+          <img style="width: 18px;height:22px;vertical-align: middle; " src="img/inLocation.png">
+          <span class="white-font" style="vertical-align: middle;overflow: hidden">{{provinceCn}}</span>
+        </div>
+       <!-- <div class="col-67 col-center" style="color: white;overflow: hidden"></div>-->
+      </div>
+    </div>
+    <div class="col-67 item-input">
+      <i class="icon ion-ios-search placeholder-icon font-26"></i>
+      <input type="search" ng-model="etwCode" ng-focus="search = true" ng-blur="search = false" class="searchInput white-font" placeholder="搜索产品">
+    </div>
+    <div class="col-15 text-center"  ng-if="search" ng-click="searchProduct();">
+      <a class="button button-clear white-font font-14">查询</a>
+    </div>
+    <div class="col-15 text-center"  ng-if="!search" ng-click="scanBarcode();">
+      <img src="img/tab_icon_scan.png" style="height: 32px;padding: 5px;">
+    </div>
+  </div>
+  <ion-content class="has-header">
+    <div class="list">
+      <div class="row">
+        <div class="col-50 text-right">
+          <div ui-sref="home" class="border-color relepos" style="width: 16vw;height: 16vw;border-radius: 50%;display: inline-block;">
+            <img style="position: absolute;width: 50%;height: 60%;margin-left: -25%;margin-top: -30%;top: 50%;left: 50%" src="img/index1.gif">
+          </div>
+          <div class="coffee-font" style="display: inline-block;line-height: 16vw;vertical-align: top;">日化品</div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-75 text-right">
+          <div ui-sref="serviceProduct" class="border-color relepos" style="width: 20vw;height: 20vw;border-radius: 50%;display: inline-block;">
+            <img style="position: absolute;width: 50%;height: 60%;margin-left: -25%;margin-top: -30%;top: 50%;left: 50%" src="img/index2.png">
+          </div>
+          <div class="coffee-font" style="display: inline-block;line-height: 20vw;vertical-align: top;">定制服务</div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-60 text-center">
+          <div style="height: 24vw;padding-right: 10%;padding-left: 10%;">
+            <img style="width: 100%;height: 100%;" src="img/logo.png">
+          </div>
+        </div>
+        <div class="col-40">
+          <div ui-sref="activity" class="border-color relepos" style="width: 24vw;height: 24vw;border-radius: 50%;display: inline-block;">
+            <img style="position: absolute;width: 50%;height: 60%;margin-left: -25%;margin-top: -30%;top: 50%;left: 50%" src="img/index3.gif">
+          </div>
+          <div class="coffee-font" style="display: inline-block;line-height: 24vw;vertical-align: top;">活动</div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-72 text-right">
+          <div ui-sref="tab.mine" class="border-color relepos" style="width: 26vw;height: 26vw;border-radius: 50%;display: inline-block;">
+            <img style="position: absolute;width: 50%;height: 60%;margin-left: -25%;margin-top: -30%;top: 50%;left: 50%" src="img/index4.gif">
+          </div>
+          <div class="coffee-font" style="display: inline-block;line-height: 26vw;vertical-align: top;">我的</div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-50 text-right">
+          <div ng-click="subscribe();" class="border-color relepos" style="width: 30vw;height: 30vw;border-radius: 50%;display: inline-block;">
+            <img style="position: absolute;width: 50%;height: 60%;margin-left: -25%;margin-top: -30%;top: 50%;left: 50%" src="img/index5.gif">
+          </div>
+          <div class="coffee-font" style="display: inline-block;line-height: 30vw;vertical-align: top;">预约</div>
+        </div>
+      </div>
+
+    </div>
+  </ion-content>
+</div>

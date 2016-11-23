@@ -1,0 +1,13 @@
+<div class="modal refuseOrder">
+    <ion-header-bar>
+         <a id="left-icon" class="button icon ion-ios-arrow-left  button-clear" ng-click="close()"></a>
+         <h4 id="header-title">选择区域</h4>
+    </ion-header-bar>
+    <ion-content>
+        <div class="list">
+            <div class="item" ng-repeat="province in dataDictService.provinces" style="padding: 10px;" ng-click="chooseCity(province)">
+                {{province.text}}
+            </div>
+        </div>
+    </ion-content>
+</div>
